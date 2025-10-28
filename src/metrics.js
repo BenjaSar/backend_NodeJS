@@ -1,7 +1,7 @@
 // metrics.js
 import client from 'prom-client';
 import express from 'express';
-import logger from './logger.js';
+import logger from './utils/logger.js';
 
 // Create metrics
 const requestDuration = new client.Histogram({

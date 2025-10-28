@@ -20,7 +20,7 @@ const myFormat = printf(({ level, message, timestamp }) => {
 });
 
 // Create the logger
-const logger = createLogger({
+const logger = winston.createLogger({
   level: process.env.LOG_LEVEL || 'info',
   format: combine(
     colorize(),
