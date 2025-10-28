@@ -1,22 +1,24 @@
 ![header](doc/imgs/LogoHeader.png)
 
-# Project Store API Client
+# Project Store REST API
 
-This project demonstrates how to handle HTTP requests to a fake store API using JavaScript's `fetch` API. It provides functions to perform CRUD operations (Create, Read, Update, Delete) on products.
+This project is an Express-based REST API for managing products. It provides endpoints for CRUD operations (Create, Read, Update, Delete) on products, along with health monitoring and metrics collection.
 
 ## Features
 
-- Read all products
-- Read a product by ID
-- Create a new product
-- Update an existing product
-- Delete a product
+- RESTful API endpoints for product management
+- Health check endpoint
+- Prometheus metrics integration
+- CORS support
+- Request logging with Winston
+- Error handling and 404 routing
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+ recommended for built-in fetch support)
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- npm or pnpm
 
 ### Installation
 
@@ -35,52 +37,110 @@ This project demonstrates how to handle HTTP requests to a fake store API using 
    npm install
    ```
 
-## Usage
+4. Create a `.env` file (if needed) for environment variables:
+   ```
+   PORT=3000
+   ALLOWED_ORIGINS=*
+   ```
 
-The application supports the following commands:
+### Running the Server
 
-### Read All Products
+Start the development server:
 ```sh
-node app/index.js GET products
+npm start
 ```
 
-### Read Product by ID
+The server will run at `http://localhost:3000/`
+
+## API Endpoints
+
+### General Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Welcome page with available endpoints |
+| GET | `/health` | Health check - returns server status |
+| GET | `/ping` | Simple ping endpoint |
+| GET | `/metrics` | Prometheus metrics |
+
+### Product Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/products` | Get all products |
+| GET | `/api/products/in-stock` | Get products with stock > 0 |
+| GET | `/api/products/:id` | Get a specific product by ID |
+| POST | `/api/products` | Create a new product |
+| PUT | `/api/products/:id/stock` | Update product stock |
+
+### Example Requests
+
+**Get All Products:**
 ```sh
-node app/index.js GET products/id_product
+curl http://localhost:3000/api/products
 ```
 
-### Create New Product
+**Get Product by ID:**
 ```sh
-node app/index.js POST products "product_title" "product_price" "product_description"
+curl http://localhost:3000/api/products/1
 ```
 
-### Update Product
+**Create New Product:**
 ```sh
-node app/index.js UPDATE products id_product price description_product
+curl -X POST http://localhost:3000/api/products \
+  -H "Content-Type: application/json" \
+  -d '{"name":"New Product","price":100,"stock":50}'
 ```
 
-### Delete Product
+**Update Product Stock:**
 ```sh
-node app/index.js DELETE products/id_product
+curl -X PUT http://localhost:3000/api/products/1/stock \
+  -H "Content-Type: application/json" \
+  -d '{"stock":25}'
 ```
 
-## API Reference
+## Project Structure
 
-### Commands Structure
+```
+Project/
+├── index.js                          # Main server file
+├── src/
+│   ├── controllers/                  # Request handlers
+│   │   └── products.controller.js
+│   ├── services/                     # Business logic
+│   │   └── product.service.js
+│   ├── routes/                       # API routes
+│   │   └── products.routes.js
+│   ├── utils/                        # Utilities
+│   │   └── logger.js                # Winston logger
+│   ├── metrics.js                    # Prometheus metrics
+│   └── fakestoreAPI.js              # External API integration
+├── logs/                            # Log files
+└── doc/                             # Documentation assets
 
-| Command | Format | Description |
-|---------|---------|-------------|
-| GET | `GET products` | Retrieve all products |
-| GET | `GET products/{id}` | Retrieve a specific product |
-| POST | `POST products {title} {price} {description}` | Create a new product |
-| PUT | `PUT products/{id} {newTitle}` | Update a product |
-| DELETE | `DELETE products/{id}` | Delete a product |
+```
+
+## Recent Fixes (2025-10-27)
+
+### Fixed 404 Errors
+- **Root route (`/`)**: Added welcome endpoint with available routes
+- **Products API (`/api/products`)**: Fixed routing issues:
+  - Corrected controller imports to avoid naming conflicts
+  - Fixed service functions to properly work with data models
+  - Updated routes to use controller functions instead of service functions directly
+
+### Architecture Improvements
+- Properly separated concerns: Routes → Controllers → Services
+- Fixed circular dependencies and naming conflicts
+- Improved error handling in services and controllers
 
 ## Error Handling
 
-- Invalid commands will display an error message
-- The application will exit with code 1 for unrecognized commands
-- Network errors and API responses are properly handled
+- 404 errors for undefined routes
+- 500 errors for server-side issues
+- Proper error logging with Winston
+- Validation for required product fields and non-negative values
+
 
 ## Contributing
 

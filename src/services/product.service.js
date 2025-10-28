@@ -1,14 +1,37 @@
-const { log } = require("console");
-const { default: logger } = require("../logger");
-const productsModel = require("../models/products.model");
-const usersModel = require("../models/user.model");
+import { log } from "console";
+import logger from "../utils/logger.js";
+//const productsModel = require("../models/products.model");
 
-async function getProductsInStock() {
-  const products = await productsModel.getAllProducts();
+const productsModel = [
+  {
+    id: 1,
+    name: "Producto 1",
+    price: 1000,
+    stock: 10,
+  },
+  {
+    id: 2,
+    name: "Producto 2",
+    price: 2000,
+    stock: 22,
+  },
+];
+
+export const  getAllProductsService = async  () => {
+  log("Fetching all products from service");
+  return productsModel;
+}
+
+export const  getProductByIdService = async (productId) => {
+  return productsModel.find((product) => product.id === productId);
+}
+
+export const  getProductsInStockService = async () => {
+  const products = await productsModel.getAllProductsService();
   return products.filter((product) => product.stock > 0);
 }
 
-async function addNewProduct(productData) {
+export const addNewProductService = async(productData) => {
   if (
     !productData.name ||
     !productData.price ||
@@ -23,21 +46,15 @@ async function addNewProduct(productData) {
   return await productsModel.createProduct(productData);
 }
 
-async function updateProductStock(productId, newStock) {
+export const  updateProductStockService = async(productId, newStock) => {
   if (newStock < 0) {
     logger.error("Stock must be non-negative");
     throw new Error("Stock must be non-negative");
   }
-  const product = await productsModel.getProductById(productId);
+  const product = await productsModel.getProductByIdService(productId);
   if (!product) {
     logger.error(`Product with ID ${productId} not found`);
     throw new Error("Product not found");
   }
-  return await productsModel.updateProduct(productId, { stock: newStock });
+  return await productsModel.updateProductStockService(productId, { stock: newStock });
 }
-
-module.exports = {
-  getProductsInStock,
-  addNewProduct,
-  updateProductStock,
-};  
