@@ -179,3 +179,178 @@
 2025-10-28T01:40:14.132Z [33mwarn[39m: Product with ID NaN not found
 2025-10-28T01:40:14.253Z [33mwarn[39m: Route not found: GET /favicon.ico
 2025-10-28T01:40:21.181Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:00:00.780Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:13:32.035Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:13:58.885Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:14:24.668Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:14:43.226Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:14:45.397Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:15:07.985Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:16:13.100Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:16:37.210Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:17:49.523Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:18:02.493Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:18:18.442Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:18:32.535Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:18:58.979Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:19:08.030Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:19:27.509Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:19:38.397Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:19:59.467Z [32minfo[39m: Fetched all products
+2025-11-03T23:19:59.535Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:21:33.750Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:21:40.160Z [32minfo[39m: Fetched all products
+2025-11-03T23:21:40.194Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:21:50.314Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:21:54.016Z [32minfo[39m: Fetched all products
+2025-11-03T23:21:54.048Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:22:08.883Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:22:16.446Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:22:20.820Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:22:22.855Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:22:27.567Z [32minfo[39m: Fetched all products
+2025-11-03T23:22:27.599Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:22:52.869Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:22:57.562Z [32minfo[39m: Fetched all products
+2025-11-03T23:22:57.594Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:23:18.138Z [31merror[39m: Error fetching product with ID 1: productsModel is not defined
+2025-11-03T23:23:18.178Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:23:57.415Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:24:07.012Z [31merror[39m: Error fetching product with ID 1: productsModel is not defined
+2025-11-03T23:24:07.043Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:24:22.506Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:25:02.950Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:25:25.574Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:25:37.394Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:25:41.465Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:25:44.425Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:25:49.225Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:25:52.180Z [33mwarn[39m: Product with ID 1 not found
+2025-11-03T23:25:52.214Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:27:05.347Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:27:29.366Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:27:34.605Z [33mwarn[39m: Product with ID 1 not found
+2025-11-03T23:27:34.639Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:29:09.308Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:30:00.421Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:30:04.481Z [32minfo[39m: Fetched product with ID 1
+2025-11-03T23:30:04.513Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:30:27.242Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:30:34.099Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:31:38.572Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:32:43.249Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:33:01.880Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:33:28.225Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:33:29.499Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:34:58.827Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:35:06.605Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:35:13.693Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:35:21.594Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:35:33.340Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:35:33.381Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:36:11.867Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:37:59.317Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:38:06.411Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:38:06.449Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:38:25.300Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:38:29.035Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:38:38.854Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:38:46.012Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:38:46.042Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:38:53.547Z [32minfo[39m: Fetched product with ID 1
+2025-11-03T23:38:53.586Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:39:47.562Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:39:56.325Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:39:56.380Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:40:50.187Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:40:53.706Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:40:53.737Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:42:07.982Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:42:47.312Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:43:22.537Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:43:27.467Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:43:27.499Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:43:41.399Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:44:23.180Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:44:23.206Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:44:28.015Z [32minfo[39m: Fetched product with ID 1
+2025-11-03T23:44:28.050Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:44:59.206Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:45:12.794Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:45:12.835Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:49:15.968Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:49:47.966Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:49:48.044Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:52:48.261Z [33mwarn[39m: Product with ID NaN not found
+2025-11-03T23:52:48.359Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-03T23:56:26.679Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:56:41.206Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:57:26.255Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-03T23:58:26.736Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:01:44.276Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:02:22.627Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:03:04.576Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:03:14.988Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T00:03:15.071Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T00:04:06.628Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:06:02.834Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:07:53.768Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:09:47.943Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T00:09:48.038Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T00:10:17.694Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:10:29.857Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T00:10:29.907Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T00:12:30.740Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:12:36.359Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T00:12:36.452Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T00:12:41.808Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:12:53.293Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T00:12:53.358Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T00:55:51.282Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T00:55:51.361Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T00:57:40.968Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T00:58:25.410Z [33mwarn[39m: Route not found: GET /api/products/1/-
+2025-11-04T00:58:25.515Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:29:07.436Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:29:50.151Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:30:20.249Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:30:26.274Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:34:57.274Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:36:04.514Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:37:21.000Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:37:21.137Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:38:04.386Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:38:52.661Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:38:52.742Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:38:53.725Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:38:53.800Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:38:57.664Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:38:57.729Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:38:58.431Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:38:58.494Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:40:41.803Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:44:37.540Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:44:37.587Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:45:22.827Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:45:26.818Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:45:26.865Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:46:18.482Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:47:10.912Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:47:13.577Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:47:13.634Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:48:51.436Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:48:55.372Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:48:55.468Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:49:14.925Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:49:19.102Z [33mwarn[39m: Product with ID NaN not found
+2025-11-04T01:49:19.171Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:51:58.048Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:51:59.790Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:52:02.494Z [32minfo[39m: Fetched products in stock
+2025-11-04T01:52:02.586Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-04T01:53:43.377Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:55:51.304Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:56:25.029Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:56:37.402Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:56:44.100Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-04T01:58:29.365Z [32minfo[39m: Server running at http://localhost:3000/

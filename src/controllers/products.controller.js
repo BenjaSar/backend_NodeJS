@@ -57,6 +57,7 @@ export const getProductsInStock = async (req, res) => {
     res.status(500).json({ error: err.message });
   } 
 };
+
 export const updateProductStock = async (req, res) => {
   const productId = parseInt(req.params.id, 10);
   const { stock } = req.body; 
