@@ -1,26 +1,40 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import db from '../data/data.js';
+import { info, log } from 'console';
 
 
 const __fileName = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__fileName);
 const dbPath = path.join(__dirname, 'db.json');
 
+
 async function readDB() {
     try {
         const data = fs.readFileSync(dbPath, 'utf-8');
         const products = await JSON.parse(data);
+        log("Products read from DB from the model layer:", products);
         return products;
     } catch (error) {
         console.error('Error reading database:', error);
+        info.error('Error reading database from the model layer:', error);
         return [];
     } 
 }
 
 export async function getAllProductsModels() {
-    const productsModel = await readDB();
-    return productsModel;
+    return new Promise(async (resolve, reject) => {
+        try {
+            const productsModel = await readDB();
+            log.info('Products retrieved successfully from the model layer');
+            resolve(productsModel);
+        } catch (error) {
+             log.error('Error in getAllProductsModels:', error);       
+            reject(error);
+        }
+    })
+    
 }
 
 export async function getProductByIdModels(id) {

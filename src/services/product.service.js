@@ -20,9 +20,14 @@ import {getAllProductsModels, getProductByIdModels, getProductsInStockModels, up
 // ];
 
 export const  getAllProductsService = async  () => {
-  const productsModel = await getAllProductsModels();
-  console.log(productsModel);
-  return productsModel;
+  return new Promise(async (resolve, reject) => {
+      try {
+        const productsModel = await getAllProductsModels();
+        resolve(productsModel);
+      } catch (error) {
+        reject(error);
+      }
+});
 }
 
 export const  getProductByIdService = async (productId) => {
