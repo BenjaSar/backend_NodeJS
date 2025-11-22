@@ -1,78 +1,100 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import db from '../data/data.js';
-import { info, log } from 'console';
-
-
-const __fileName = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__fileName);
-const dbPath = path.join(__dirname, 'db.json');
-
-
-async function readDB() {
-    try {
-        const data = fs.readFileSync(dbPath, 'utf-8');
-        const products = await JSON.parse(data);
-        log("Products read from DB from the model layer:", products);
-        return products;
-    } catch (error) {
-        console.error('Error reading database:', error);
-        info.error('Error reading database from the model layer:', error);
-        return [];
-    } 
-}
-
-export async function getAllProductsModels() {
-    return new Promise(async (resolve, reject) => {
-        try {
-            const productsModel = await readDB();
-            log.info('Products retrieved successfully from the model layer');
-            resolve(productsModel);
-        } catch (error) {
-             log.error('Error in getAllProductsModels:', error);       
-            reject(error);
-        }
-    })
-    
-}
+import db from "../data/data.js";
+import { doc, collection, getDoc, getDocs, addDoc, updateDoc, deleteDoc } from "firebase/firestore";
+import logger from "../utils/logger.js";
 
 export async function getProductByIdModels(id) {
-    const productsModel = await readDB();
-    const productId = parseInt(id);
-    const product = productsModel.find((p) => p.id === productId);  
-    return product
+  try {
+    const docRef = doc(db, "products", id);
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      const product = { id: docSnap.id, ...docSnap.data() };
+
+      logger.info("Product retrieved", { id, product });
+      return product;
+    } else {
+      logger.warn(`Product with ID ${id} not found`);
+      return null;
+    }
+  } catch (error) {
+    logger.error("Error retrieving product", { id, error });
+    throw error;
+  }
 }
 
 export async function getProductsInStockModels() {
-    const productsModel = await readDB();
-    console.log("All products in db stage stock:", productsModel);
-    const productsInStock = productsModel.filter((product) => product.stock > 0);
+  try {
+    const querySnapshot = await getDocs(collection(db, "products"));
 
-    return productsInStock
+    const productsInStock = querySnapshot.docs
+      .map(doc => ({ id: doc.id, ...doc.data() }))
+      .filter(product => product.stock > 0);
+
+    logger.info(`Products in stock fetched: ${productsInStock.length}`);
+
+    return productsInStock;
+
+  } catch (error) {
+    logger.error("Error fetching products in stock", { error });
+    throw error;
+  }
 }
+
 
 export async function createProductModels(productData) {
-    const productsModel = await readDB();
-    const newProductId = productsModel.length > 0 ? Math.max(...productsModel.map(p => p.id)) + 1 : 1;  
-    const newProduct = {
-        id: newProductId,
-        name: productData.name, 
-        price: productData.price,
-        stock: productData.stock
-    };
-    productsModel.push(newProduct);
-    fs.writeFileSync(dbPath, JSON.stringify(productsModel, null, 2));
-    return newProduct;
+  try {
+    const docRef = await addDoc(collection(db, "products"), {
+      name: productData.name,
+      price: productData.price,
+      stock: productData.stock,
+      category: productData.category,
+      //createdAt: new Date(),
+    });
+    logger.info("Product added with ID: ", docRef.id);
+
+    return { id: docRef.id, ...productData };
+  } catch (error) {
+    console.error("Error adding product:", error);
+    logger.error("Error adding product:", error);
+    throw error;
+  }
 }
 
-export async function updateProductStockModels(productId, updateData) {
-    const productsModel = await readDB();
-    const productIndex = productsModel.findIndex((p) => p.id === productId);
-    if (productIndex === -1) {
-        throw new Error("Product not found");
-    }   
-    productsModel[productIndex].stock = updateData.stock;
-    fs.writeFileSync(dbPath, JSON.stringify(productsModel, null, 2));
-    return productsModel[productIndex];
+export async function getAllProductsModels() {
+  try {
+    const querySnapshot = await getDocs(collection(db, "products"));
+    const products = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    logger.info("All products fetched", { count: products.length });
+    return products;
+    } catch (error) {
+        logger.error('Error fetching all products:', error);
+        throw error;
+    }
 }
+
+
+export async function updateProductModels(productId, updateData) {
+    try {
+        const docRef = doc(db, "products", productId);
+        await updateDoc(docRef, updateData);
+        const updatedDoc = await getDoc(docRef);
+        logger.info(`Product updated with ID: ${productId}`);
+        return { id: updatedDoc.id, ...updatedDoc.data() };
+    } catch (error) {
+        logger.error(`Error updating product with ID: ${productId}`, { error });
+        throw error;
+    }
+}
+
+
+export async function deleteProductModels(productId) {
+    try {
+        const docRef = doc(db, "products", productId);
+        await deleteDoc(docRef);
+        logger.info(`Product deleted with ID: ${productId}`);
+    } catch (error) {
+        logger.error(`Error deleting product with ID: ${productId}`, { error });
+        throw error;
+    }
+}
+

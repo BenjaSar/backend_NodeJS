@@ -2,145 +2,234 @@
 
 # Project Store REST API
 
-This project is an Express-based REST API for managing products. It provides endpoints for CRUD operations (Create, Read, Update, Delete) on products, along with health monitoring and metrics collection.
+A production-ready Express.js REST API for managing products and users with JWT authentication, health monitoring, and Prometheus metrics.
 
-## Features
+## Table of Contents
 
-- RESTful API endpoints for product management
-- Health check endpoint
-- Prometheus metrics integration
-- CORS support
-- Request logging with Winston
-- Error handling and 404 routing
+- [Quick Start](#quick-start)
+- [Features](#features)
+- [API Endpoints](#api-endpoints)
+- [Authentication](#authentication)
+- [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
+- [Technologies](#technologies)
 
-## Getting Started
+## Quick Start
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
+- Node.js v18+
 - npm or pnpm
 
 ### Installation
 
-1. Clone this repository:
-   ```sh
-   git clone <repository-url>
-   ```
+```bash
+git clone https://github.com/BenjaSar/backend_NodeJS.git
+cd Project
+npm install
+```
 
-2. Navigate to the project directory:
-   ```sh
-   cd Project
-   ```
+### Setup
 
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
+Create a `.env` file:
 
-4. Create a `.env` file (if needed) for environment variables:
-   ```
-   PORT=3000
-   ALLOWED_ORIGINS=*
-   ```
+```env
+PORT=3000
+NODE_ENV=development
+JWT_SECRET=your_jwt_secret_key
+ALLOWED_ORIGINS=*
+```
 
-### Running the Server
+### Run Server
 
-Start the development server:
-```sh
+```bash
 npm start
 ```
 
-The server will run at `http://localhost:3000/`
+Server runs at `http://localhost:3000/`
+
+## Features
+
+- RESTful API with CRUD operations
+- JWT token-based authentication
+- Product management with stock tracking
+- Health monitoring endpoint
+- Prometheus metrics integration
+- Comprehensive request logging (Winston)
+- CORS support
+- Centralized error handling
+- Database integration (Firebase/MongoDB)
+- Automatic restart on file changes (Nodemon)
 
 ## API Endpoints
 
-### General Endpoints
+### General
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/` | Welcome page with available endpoints |
-| GET | `/health` | Health check - returns server status |
-| GET | `/ping` | Simple ping endpoint |
-| GET | `/metrics` | Prometheus metrics |
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/` | Welcome page | No |
+| GET | `/health` | Server health check | No |
+| GET | `/ping` | Ping endpoint | No |
+| GET | `/metrics` | Prometheus metrics | No |
 
-### Product Endpoints
+### Authentication
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/products` | Get all products |
-| GET | `/api/products/in-stock` | Get products with stock > 0 |
-| GET | `/api/products/:id` | Get a specific product by ID |
-| POST | `/api/products` | Create a new product |
-| PUT | `/api/products/:id/stock` | Update product stock |
+| Method | Endpoint | Body | Auth |
+|--------|----------|------|------|
+| POST | `/api/login` | `{ "username", "password" }` | No |
 
-### Example Requests
-
-**Get All Products:**
-```sh
-curl http://localhost:3000/api/products
-```
-
-**Get Product by ID:**
-```sh
-curl http://localhost:3000/api/products/1
-```
-
-**Create New Product:**
-```sh
-curl -X POST http://localhost:3000/api/products \
+**Login Example:**
+```bash
+curl -X POST http://localhost:3000/api/login \
   -H "Content-Type: application/json" \
-  -d '{"name":"New Product","price":100,"stock":50}'
+  -d '{"username":"<your-username>","password":"<your-password>"}'
 ```
 
-**Update Product Stock:**
-```sh
-curl -X PUT http://localhost:3000/api/products/1/stock \
-  -H "Content-Type: application/json" \
-  -d '{"stock":25}'
+**Response:**
+```json
+{ "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." }
 ```
+
+### Products
+
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/api/products` | Get all products | Yes |
+| GET | `/api/products/:id` | Get product by ID | Yes |
+| GET | `/api/products/in-stock` | Get in-stock products | Yes |
+| POST | `/api/products/create` | Create product | Yes |
+| PATCH | `/api/products/:id/stock` | Update stock | Yes |
+| DELETE | `/api/products/:id` | Delete product | Yes |
+
+**Create Product Example:**
+```bash
+curl -X POST http://localhost:3000/api/products/create \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{
+    "name": "Product Name",
+    "price": 99.99,
+    "category": "electronics",
+    "stock": 50
+  }'
+```
+
+**Required Fields for Product Creation:**
+- `name` - Product name (string)
+- `price` - Product price (number)
+- `category` - Product category (string)
+- `stock` - Stock quantity (number)
+
+## Authentication
+
+All protected endpoints require a JWT token in the Authorization header:
+
+```
+Authorization: Bearer <your_jwt_token>
+```
+
+**Default Test Credentials:**
+- Username: `<your-usenname>`
+- Password: `<your-password>`
+
+1. Login to get a token
+2. Use token in subsequent requests
 
 ## Project Structure
 
 ```
 Project/
-├── index.js                          # Main server file
+├── index.js                 # Server entry point
+├── package.json
+├── .env                     # Environment variables
+├── prometheus.yml           # Prometheus config
 ├── src/
-│   ├── controllers/                  # Request handlers
-│   │   └── products.controller.js
-│   ├── services/                     # Business logic
-│   │   └── product.service.js
-│   ├── routes/                       # API routes
-│   │   └── products.routes.js
-│   ├── utils/                        # Utilities
-│   │   └── logger.js                # Winston logger
-│   ├── metrics.js                    # Prometheus metrics
-│   └── fakestoreAPI.js              # External API integration
-├── logs/                            # Log files
-└── doc/                             # Documentation assets
-
+│   ├── controllers/         # Request handlers
+│   ├── services/            # Business logic
+│   ├── routes/              # API routes
+│   ├── models/              # Data models
+│   ├── middleware/          # JWT validation
+│   ├── utils/               # Logger, utilities
+│   ├── data/                # Static data
+│   └── logs/                # Application logs
+└── doc/                     # Documentation assets
 ```
 
+**Architecture:** Routes → Controllers → Services → Models
 
-### Architecture Improvements
-- Properly separated concerns: Routes → Controllers → Services
-- Fixed circular dependencies and naming conflicts
-- Improved error handling in services and controllers
+## Environment Variables
 
-## Error Handling
+```env
+# Server
+PORT=3000
+NODE_ENV=development
+ALLOWED_ORIGINS=*
 
-- 404 errors for undefined routes
-- 500 errors for server-side issues
-- Proper error logging with Winston
-- Validation for required product fields and non-negative values
+# JWT
+JWT_SECRET=your_super_secret_key
 
+# Firebase (optional)
+FIREBASE_API_KEY=key
+FIREBASE_PROJECT_ID=project_id
+FIREBASE_AUTH_DOMAIN=auth_domain
+
+# MongoDB (optional)
+MONGODB_URI=mongodb://localhost:27017/store
+```
+
+## Technologies
+
+- **Express.js** - Web framework
+- **JWT** - Authentication
+- **Winston** - Logging
+- **CORS** - Cross-origin requests
+- **Prometheus** - Metrics
+- **Nodemon** - Dev server reload
+- **Firebase** - Optional auth/database
+- **Mongoose** - Optional MongoDB ODM
+
+## Common Issues
+
+**Module Not Found:**
+- Check import paths and file names
+- Ensure correct directory structure
+
+**JWT Token Errors:**
+- Verify token in Authorization header
+- Check JWT_SECRET is set in .env
+- Ensure token hasn't expired
+
+**CORS Issues:**
+- Update ALLOWED_ORIGINS in .env
+- Verify client sends proper headers
+
+**Product Creation Fails:**
+- Ensure all required fields: name, price, category, stock
+- Check field values are correct types
+- Verify Content-Type: application/json header
+
+## Health Check
+
+```bash
+curl http://localhost:3000/health
+```
+
+Response:
+```json
+{
+  "uptime": 123.456,
+  "message": "OK",
+  "timestamp": 1700318000000
+}
+```
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
+1. Fork repository
+2. Create feature branch: `git checkout -b feature/name`
+3. Commit changes: `git commit -m 'Add feature'`
+4. Push branch: `git push origin feature/name`
+5. Open Pull Request
 
 ## License
 
@@ -148,10 +237,10 @@ MIT
 
 ## Author
 
-FS
+**FS** - Backend Developer
 
 ---
 
-Done with :heart:
+Made with ❤️
 
 ![footer](doc/imgs/LogoFooter.png)

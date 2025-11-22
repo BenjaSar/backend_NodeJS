@@ -364,3 +364,407 @@
 2025-11-17T22:30:57.866Z [32minfo[39m: Server running at http://localhost:3000/
 2025-11-17T22:45:36.247Z [32minfo[39m: Server running at http://localhost:3000/
 2025-11-17T22:48:17.328Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:32:45.620Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:32:53.424Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:35:04.511Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-17T23:37:18.272Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:39:48.735Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:41:12.276Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:41:16.838Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:43:20.026Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:50:07.511Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-17T23:52:43.064Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:02:28.305Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:03:15.116Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:04:08.887Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:07:40.639Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:08:05.904Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:08:08.762Z [33mwarn[39m: Route not found: GET /metrics
+2025-11-18T12:11:07.928Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:11:24.247Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:11:24.310Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-18T12:14:35.053Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:14:54.034Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:16:07.600Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:16:40.616Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-18T12:44:33.976Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:44:38.976Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:44:43.966Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:44:49.003Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:44:53.999Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:44:59.006Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:03.997Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:09.030Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:13.966Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:18.968Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:23.960Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:28.962Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:33.964Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:38.955Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:43.952Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:48.957Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:53.953Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:45:58.950Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:03.945Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:08.946Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:13.950Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:18.947Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:23.939Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:28.939Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:33.937Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:38.937Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:43.935Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:48.935Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:53.931Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:46:58.933Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:03.929Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:08.928Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:13.927Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:18.926Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:23.924Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:28.923Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:33.922Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:38.923Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:43.934Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:48.919Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:53.918Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:47:58.916Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:03.922Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:08.916Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:13.915Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:18.913Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:23.912Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:28.913Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:33.919Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:38.912Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:43.913Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:48.911Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:53.910Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:48:58.909Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:03.908Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:08.907Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:13.909Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:18.908Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:23.907Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:28.907Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:33.906Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:38.906Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:43.906Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:48.906Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:53.904Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:49:58.904Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:03.903Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:08.903Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:13.902Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:18.902Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:23.901Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:28.901Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:33.900Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:38.900Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:43.899Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:48.898Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:53.897Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:50:58.898Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:03.895Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:08.894Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:13.895Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:18.896Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:23.893Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:28.899Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:33.892Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:38.891Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:43.891Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:44.799Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:48.892Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:53.895Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:51:58.890Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:52:03.894Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:52:08.890Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:52:13.889Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:52:18.889Z [32minfo[39m: Metrics collected successfully
+2025-11-18T12:52:23.889Z [32minfo[39m: Metrics collected successfully
+2025-11-21T19:38:56.474Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-21T20:09:37.784Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T13:14:21.906Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T13:14:47.254Z [32minfo[39m: All products fetched
+2025-11-22T13:14:47.259Z [32minfo[39m: Fetched all products
+2025-11-22T13:14:47.312Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:15:39.020Z [31merror[39m: Error retrieving product
+2025-11-22T13:15:39.022Z [31merror[39m: Error fetching product with ID 1: path.indexOf is not a function
+2025-11-22T13:15:39.100Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:16:51.445Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T13:20:29.310Z [32minfo[39m: All products fetched
+2025-11-22T13:20:29.318Z [32minfo[39m: Fetched all products
+2025-11-22T13:20:29.373Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:50:16.093Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T13:50:22.287Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:50:37.177Z [32minfo[39m: All products fetched
+2025-11-22T13:50:37.178Z [32minfo[39m: Fetched all products
+2025-11-22T13:50:37.211Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:53:41.321Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T13:54:30.153Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T13:54:50.472Z [33mwarn[39m: Route not found: GET /products
+2025-11-22T13:54:50.510Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:55:09.146Z [32minfo[39m: All products fetched
+2025-11-22T13:55:09.148Z [32minfo[39m: Fetched all products
+2025-11-22T13:55:09.176Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:55:24.834Z [31merror[39m: Error retrieving product
+2025-11-22T13:55:24.835Z [31merror[39m: Error fetching product with ID 1: path.indexOf is not a function
+2025-11-22T13:55:24.852Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:55:33.598Z [31merror[39m: Error retrieving product
+2025-11-22T13:55:33.599Z [31merror[39m: Error fetching product with ID 2: path.indexOf is not a function
+2025-11-22T13:55:33.620Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:57:23.835Z [31merror[39m: Error retrieving product
+2025-11-22T13:57:23.837Z [31merror[39m: Error fetching product with ID NaN: path.indexOf is not a function
+2025-11-22T13:57:23.853Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:57:31.281Z [33mwarn[39m: Route not found: GET /api/product/EhQgulC7iEHo3JkwY92b
+2025-11-22T13:57:31.297Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:57:42.981Z [32minfo[39m: All products fetched
+2025-11-22T13:57:42.984Z [32minfo[39m: Fetched all products
+2025-11-22T13:57:43.018Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:57:57.361Z [31merror[39m: Error retrieving product
+2025-11-22T13:57:57.361Z [31merror[39m: Error fetching product with ID NaN: path.indexOf is not a function
+2025-11-22T13:57:57.383Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T13:59:02.197Z [32minfo[39m: Products in stock fetched: 0
+2025-11-22T13:59:02.201Z [32minfo[39m: Fetched products in stock
+2025-11-22T13:59:02.241Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:02:13.420Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:02:25.248Z [32minfo[39m: Products in stock fetched: 0
+2025-11-22T14:02:25.249Z [32minfo[39m: Products in stock fetched: 0
+2025-11-22T14:02:25.252Z [32minfo[39m: Fetched products in stock
+2025-11-22T14:02:25.277Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:02:45.550Z [31merror[39m: Error retrieving product
+2025-11-22T14:02:45.551Z [31merror[39m: Error fetching product with ID 1: path.indexOf is not a function
+2025-11-22T14:02:45.580Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:02:48.787Z [32minfo[39m: All products fetched
+2025-11-22T14:02:48.790Z [32minfo[39m: Fetched all products
+2025-11-22T14:02:48.823Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:02:58.690Z [31merror[39m: Error retrieving product
+2025-11-22T14:02:58.691Z [31merror[39m: Error fetching product with ID NaN: path.indexOf is not a function
+2025-11-22T14:02:58.712Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:40:46.712Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:40:54.338Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:41:04.223Z [32minfo[39m: Product retrieved
+2025-11-22T14:41:04.227Z [32minfo[39m: Fetched product with ID EhQgulC7iEHo3JkwY92b
+2025-11-22T14:41:04.246Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:41:13.414Z [32minfo[39m: All products fetched
+2025-11-22T14:41:13.416Z [32minfo[39m: Fetched all products
+2025-11-22T14:41:13.446Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:41:21.443Z [32minfo[39m: Product retrieved
+2025-11-22T14:41:21.444Z [32minfo[39m: Fetched product with ID UAeWt7eRezfgDLvoWdb1
+2025-11-22T14:41:21.461Z [33mwarn[39m: Route not found: GET /favicon.ico
+2025-11-22T14:44:39.574Z [32minfo[39m: All products fetched
+2025-11-22T14:44:39.576Z [32minfo[39m: Fetched all products
+2025-11-22T14:45:21.369Z [32minfo[39m: Product retrieved
+2025-11-22T14:45:21.370Z [32minfo[39m: Fetched product with ID EhQgulC7iEHo3JkwY92b
+2025-11-22T14:46:50.090Z [32minfo[39m: All products fetched
+2025-11-22T14:46:50.095Z [32minfo[39m: Fetched all products
+2025-11-22T14:47:10.117Z [33mwarn[39m: Route not found: POST /api/products
+2025-11-22T14:47:27.078Z [33mwarn[39m: Route not found: POST /api/products/
+2025-11-22T14:47:52.761Z [31merror[39m: Error creating product: Missing required product fields: name, price, stock
+2025-11-22T14:48:53.930Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:49:09.154Z [31merror[39m: Error creating product: Missing required product fields: name, price, stock
+2025-11-22T14:49:19.278Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:49:35.977Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:51:02.060Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:51:12.295Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:51:26.958Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:51:46.913Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:51:56.448Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:51:58.671Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:53:54.686Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:54:06.128Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T14:54:09.809Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:55:57.896Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:00:06.024Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:00:32.193Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:02:13.935Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:02:18.467Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:02:27.038Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:02:31.835Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:04:45.840Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:04:48.546Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:05:55.415Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:06:39.464Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:06:46.321Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:06:53.580Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:06:57.684Z [32minfo[39m: Product retrieved
+2025-11-22T15:06:57.686Z [32minfo[39m: Fetched product with ID EhQgulC7iEHo3JkwY92b
+2025-11-22T15:07:04.084Z [32minfo[39m: All products fetched
+2025-11-22T15:07:04.085Z [32minfo[39m: Fetched all products
+2025-11-22T15:07:19.194Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:09:42.126Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:09:46.156Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:12:17.609Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:12:42.300Z [32minfo[39m: DEBUG: Received productData:
+2025-11-22T15:12:42.300Z [32minfo[39m: DEBUG: name:
+2025-11-22T15:12:42.301Z [32minfo[39m: DEBUG: price:
+2025-11-22T15:12:42.301Z [32minfo[39m: DEBUG: category:
+2025-11-22T15:12:42.301Z [32minfo[39m: DEBUG: stock:
+2025-11-22T15:12:42.302Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:13:30.038Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:15:15.131Z [32minfo[39m: Controller - req.body:
+2025-11-22T15:15:15.131Z [32minfo[39m: Controller - req.headers:
+2025-11-22T15:15:15.132Z [32minfo[39m: DEBUG: Received productData:
+2025-11-22T15:15:15.132Z [32minfo[39m: DEBUG: name:
+2025-11-22T15:15:15.132Z [32minfo[39m: DEBUG: price:
+2025-11-22T15:15:15.133Z [32minfo[39m: DEBUG: category:
+2025-11-22T15:15:15.133Z [32minfo[39m: DEBUG: stock:
+2025-11-22T15:15:15.134Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:16:19.214Z [32minfo[39m: Controller - req.body:
+2025-11-22T15:16:19.215Z [32minfo[39m: Controller - req.headers:
+2025-11-22T15:16:19.215Z [32minfo[39m: DEBUG: Received productData:
+2025-11-22T15:16:19.215Z [32minfo[39m: DEBUG: name:
+2025-11-22T15:16:19.215Z [32minfo[39m: DEBUG: price:
+2025-11-22T15:16:19.215Z [32minfo[39m: DEBUG: category:
+2025-11-22T15:16:19.215Z [32minfo[39m: DEBUG: stock:
+2025-11-22T15:16:19.216Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:16:33.079Z [32minfo[39m: Controller - req.body:
+2025-11-22T15:16:33.080Z [32minfo[39m: Controller - req.headers:
+2025-11-22T15:16:33.080Z [32minfo[39m: DEBUG: Received productData:
+2025-11-22T15:16:33.080Z [32minfo[39m: DEBUG: name:
+2025-11-22T15:16:33.080Z [32minfo[39m: DEBUG: price:
+2025-11-22T15:16:33.080Z [32minfo[39m: DEBUG: category:
+2025-11-22T15:16:33.080Z [32minfo[39m: DEBUG: stock:
+2025-11-22T15:16:33.081Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:18:11.690Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:18:21.185Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:18:50.452Z [32minfo[39m: Product added with ID: 
+2025-11-22T15:18:50.455Z [32minfo[39m: Created new product with ID JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:19:35.569Z [32minfo[39m: All products fetched
+2025-11-22T15:19:35.572Z [32minfo[39m: Fetched all products
+2025-11-22T15:19:46.013Z [32minfo[39m: Product retrieved
+2025-11-22T15:19:46.014Z [32minfo[39m: Fetched product with ID EhQgulC7iEHo3JkwY92b
+2025-11-22T15:19:54.397Z [32minfo[39m: Product added with ID: 
+2025-11-22T15:19:54.399Z [32minfo[39m: Created new product with ID eMeK080BoV2KnnBBB1Nx
+2025-11-22T15:21:50.453Z [32minfo[39m: Product retrieved
+2025-11-22T15:21:50.454Z [32minfo[39m: Fetched product with ID JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:22:24.199Z [33mwarn[39m: Route not found: DELETE /apiapi/products/EhQgulC7iEHo3JkwY92b
+2025-11-22T15:22:36.113Z [31merror[39m: Error retrieving product
+2025-11-22T15:22:36.113Z [31merror[39m: Error deleting product with ID NaN: path.indexOf is not a function
+2025-11-22T15:51:26.214Z [31merror[39m: Error retrieving product
+2025-11-22T15:51:26.214Z [31merror[39m: Error deleting product with ID NaN: path.indexOf is not a function
+2025-11-22T15:51:47.360Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:51:57.646Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:52:03.107Z [32minfo[39m: Product retrieved
+2025-11-22T15:52:03.108Z [31merror[39m: Error deleting product with ID: EhQgulC7iEHo3JkwY92b
+2025-11-22T15:52:03.108Z [31merror[39m: Error deleting product with ID EhQgulC7iEHo3JkwY92b: deleteDoc is not defined
+2025-11-22T15:52:13.713Z [32minfo[39m: Product retrieved
+2025-11-22T15:52:13.714Z [32minfo[39m: Fetched product with ID JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:52:23.062Z [32minfo[39m: Product retrieved
+2025-11-22T15:52:23.064Z [32minfo[39m: Fetched product with ID JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:52:33.682Z [32minfo[39m: All products fetched
+2025-11-22T15:52:33.684Z [32minfo[39m: Fetched all products
+2025-11-22T15:52:57.754Z [32minfo[39m: Product retrieved
+2025-11-22T15:52:57.755Z [31merror[39m: Error deleting product with ID: JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:52:57.755Z [31merror[39m: Error deleting product with ID JLvfU3PZY2MJ5UiobqQN: deleteDoc is not defined
+2025-11-22T15:53:39.358Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:53:56.474Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:54:00.680Z [32minfo[39m: Product retrieved
+2025-11-22T15:54:01.309Z [32minfo[39m: Product deleted with ID: JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:54:01.313Z [32minfo[39m: Deleted product with ID JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:55:54.733Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:56:06.563Z [32minfo[39m: Product added with ID: 
+2025-11-22T15:56:06.565Z [32minfo[39m: Created new product with ID 5MYX5mKogY7Fs2L8quUT
+2025-11-22T15:56:59.321Z [32minfo[39m: Product retrieved
+2025-11-22T15:56:59.550Z [32minfo[39m: Product deleted with ID: 5MYX5mKogY7Fs2L8quUT
+2025-11-22T15:56:59.552Z [32minfo[39m: Deleted product with ID 5MYX5mKogY7Fs2L8quUT
+2025-11-22T15:58:41.147Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:59:10.446Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:59:15.014Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:59:26.640Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:59:41.913Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T15:59:50.680Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:00:00.272Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:00:41.188Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:00:43.590Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:00:59.045Z [32minfo[39m: Product added with ID: 
+2025-11-22T16:00:59.047Z [32minfo[39m: Created new product with ID AWw1uowgakGCA4COFyJn
+2025-11-22T16:01:17.496Z [32minfo[39m: Product retrieved
+2025-11-22T16:01:17.729Z [32minfo[39m: Product deleted with ID: AWw1uowgakGCA4COFyJn
+2025-11-22T16:01:17.729Z [32minfo[39m: Deleted product with ID AWw1uowgakGCA4COFyJn
+2025-11-22T16:01:17.730Z [31merror[39m: Error encountered: NotFoundError is not defined
+2025-11-22T16:01:23.538Z [33mwarn[39m: Product with ID AWw1uowgakGCA4COFyJn not found
+2025-11-22T16:01:23.545Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T16:01:23.546Z [31merror[39m: Error encountered: NotFoundError is not defined
+2025-11-22T16:02:54.631Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:02:56.519Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:03:01.146Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:05:13.326Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:05:23.218Z [33mwarn[39m: Product with ID AWw1uowgakGCA4COFyJn not found
+2025-11-22T16:05:23.219Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T16:05:23.221Z [31merror[39m: Error encountered: NotFoundError is not defined
+2025-11-22T16:07:56.091Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:08:52.422Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T16:08:56.743Z [33mwarn[39m: Product with ID AWw1uowgakGCA4COFyJn not found
+2025-11-22T16:08:56.744Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T16:08:56.745Z [31merror[39m: Error deleting product with ID AWw1uowgakGCA4COFyJn: Product not found
+2025-11-22T19:48:31.028Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T19:53:02.982Z [31merror[39m: Error encountered: Cannot destructure property 'username' of 'req.body' as it is undefined.
+2025-11-22T19:54:06.348Z [31merror[39m: Error encountered: Cannot destructure property 'username' of 'req.body' as it is undefined.
+2025-11-22T19:56:23.104Z [31merror[39m: Error encountered: generateToken is not defined
+2025-11-22T19:57:17.625Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T19:57:21.512Z [31merror[39m: Error encountered: generateToken is not defined
+2025-11-22T20:01:29.148Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:06:00.883Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:06:25.422Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:08:22.463Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:08:34.062Z [31merror[39m: Error encountered: user is not defined
+2025-11-22T20:09:25.192Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:09:29.407Z [31merror[39m: Error encountered: user is not defined
+2025-11-22T20:11:06.506Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:14:45.067Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:14:52.381Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:14:56.424Z [32minfo[39m: User test@gmail.com logged in successfully.
+2025-11-22T20:15:43.174Z [32minfo[39m: All products fetched
+2025-11-22T20:15:43.175Z [32minfo[39m: Fetched all products
+2025-11-22T20:16:02.465Z [33mwarn[39m: Product with ID AWw1uowgakGCA4COFyJn not found
+2025-11-22T20:16:02.465Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T20:16:02.466Z [31merror[39m: Error deleting product with ID AWw1uowgakGCA4COFyJn: Product not found
+2025-11-22T20:16:22.228Z [32minfo[39m: Product added with ID: 
+2025-11-22T20:16:22.229Z [32minfo[39m: Created new product with ID mqQKwpVUTYXBTIGt1qrW
+2025-11-22T20:16:50.614Z [32minfo[39m: Product retrieved
+2025-11-22T20:16:50.888Z [32minfo[39m: Product deleted with ID: mqQKwpVUTYXBTIGt1qrW
+2025-11-22T20:16:50.888Z [32minfo[39m: Deleted product with ID mqQKwpVUTYXBTIGt1qrW
+2025-11-22T20:16:50.889Z [31merror[39m: Error deleting product with ID mqQKwpVUTYXBTIGt1qrW: Cannot set headers after they are sent to the client
+2025-11-22T20:16:50.890Z [31merror[39m: Error encountered: Cannot set headers after they are sent to the client
+2025-11-22T20:18:50.518Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:19:03.968Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:20:51.544Z [32minfo[39m: Product added with ID: 
+2025-11-22T20:20:51.547Z [32minfo[39m: Created new product with ID PwWcAuW18DIpeHFxOx4k
+2025-11-22T20:21:16.202Z [32minfo[39m: Product retrieved
+2025-11-22T20:21:16.525Z [32minfo[39m: Product deleted with ID: PwWcAuW18DIpeHFxOx4k
+2025-11-22T20:21:16.526Z [32minfo[39m: Deleted product with ID PwWcAuW18DIpeHFxOx4k
+2025-11-22T20:21:16.528Z [31merror[39m: Error deleting product with ID PwWcAuW18DIpeHFxOx4k: Cannot set headers after they are sent to the client
+2025-11-22T20:23:03.257Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:23:15.772Z [33mwarn[39m: Product with ID PwWcAuW18DIpeHFxOx4k not found
+2025-11-22T20:23:15.773Z [31merror[39m: Product with ID PwWcAuW18DIpeHFxOx4k for the deleting proccess was not found
+2025-11-22T20:23:15.775Z [31merror[39m: Error deleting product with ID PwWcAuW18DIpeHFxOx4k: Product not found
+2025-11-22T20:23:32.347Z [32minfo[39m: All products fetched
+2025-11-22T20:23:32.348Z [32minfo[39m: Fetched all products
+2025-11-22T20:23:59.131Z [32minfo[39m: Product retrieved
+2025-11-22T20:23:59.135Z [32minfo[39m: Fetched product with ID EhQgulC7iEHo3JkwY92b
+2025-11-22T20:36:22.969Z [33mwarn[39m: Route not found: PUT /api/products/
+2025-11-22T20:37:05.496Z [33mwarn[39m: Route not found: PUT /api/products/EhQgulC7iEHo3JkwY92b
+2025-11-22T20:42:47.828Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:42:59.459Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:43:19.065Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:43:24.951Z [31merror[39m: Error in updateProductService for id NaN: Invalid update data
+2025-11-22T20:43:24.953Z [31merror[39m: Error updating stock for product with ID NaN: Invalid update data
+2025-11-22T20:44:11.001Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:44:16.519Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:44:22.425Z [31merror[39m: Error in updateProductService for id EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T20:44:22.426Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T20:44:49.289Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T20:45:18.314Z [31merror[39m: Error in updateProductService for id EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T20:45:18.316Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T20:59:20.137Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T21:02:41.692Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Cannot destructure property 'updateData' of 'undefined' as it is undefined.
+2025-11-22T21:04:48.726Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T21:04:56.406Z [31merror[39m: Error in updateProductService for id EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T21:04:56.407Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T21:05:32.070Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-22T21:06:05.120Z [32minfo[39m: Product retrieved
+2025-11-22T21:06:05.967Z [32minfo[39m: Product updated with ID: EhQgulC7iEHo3JkwY92b
+2025-11-22T21:06:05.970Z [32minfo[39m: Updated stock for product with ID EhQgulC7iEHo3JkwY92b
+2025-11-22T21:34:44.498Z [31merror[39m: Token verification failed

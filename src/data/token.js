@@ -1,12 +1,19 @@
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import logger from "../utils/logger.js";
 
 dotenv.config();
 
-const SECRET_KEY = process.env.JWT_SECRET; // Replace with your actual secret key
+const SECRET_KEY = process.env.JWT_SECRET_KEY; 
+if (!SECRET_KEY) {
+  console.error("❌ ERROR: JWT_SECRET_KEY is missing in .env file");
+  logger.error("JWT_SECRET_KEY is missing in .env file");
+  process.exit(1);
+}
+
 
 export function generateToken(userdata) {
-  const userdata = {
+  const payload = {
     userId: userdata.userId,
     useremail: userdata.useremail,
   };

@@ -4,3 +4,75 @@
 2025-11-10T23:48:57.050Z [31merror[39m: Unhandled Rejection: Failed to get document because the client is offline.
 2025-11-10T23:52:02.215Z [31merror[39m: Unhandled Rejection: Failed to get document because the client is offline.
 2025-11-10T23:52:25.678Z [31merror[39m: Unhandled Rejection: Failed to get document because the client is offline.
+2025-11-22T13:15:39.020Z [31merror[39m: Error retrieving product
+2025-11-22T13:15:39.022Z [31merror[39m: Error fetching product with ID 1: path.indexOf is not a function
+2025-11-22T13:55:24.834Z [31merror[39m: Error retrieving product
+2025-11-22T13:55:24.835Z [31merror[39m: Error fetching product with ID 1: path.indexOf is not a function
+2025-11-22T13:55:33.598Z [31merror[39m: Error retrieving product
+2025-11-22T13:55:33.599Z [31merror[39m: Error fetching product with ID 2: path.indexOf is not a function
+2025-11-22T13:57:23.835Z [31merror[39m: Error retrieving product
+2025-11-22T13:57:23.837Z [31merror[39m: Error fetching product with ID NaN: path.indexOf is not a function
+2025-11-22T13:57:57.361Z [31merror[39m: Error retrieving product
+2025-11-22T13:57:57.361Z [31merror[39m: Error fetching product with ID NaN: path.indexOf is not a function
+2025-11-22T14:02:45.550Z [31merror[39m: Error retrieving product
+2025-11-22T14:02:45.551Z [31merror[39m: Error fetching product with ID 1: path.indexOf is not a function
+2025-11-22T14:02:58.690Z [31merror[39m: Error retrieving product
+2025-11-22T14:02:58.691Z [31merror[39m: Error fetching product with ID NaN: path.indexOf is not a function
+2025-11-22T14:47:52.761Z [31merror[39m: Error creating product: Missing required product fields: name, price, stock
+2025-11-22T14:49:09.154Z [31merror[39m: Error creating product: Missing required product fields: name, price, stock
+2025-11-22T14:49:35.977Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:51:12.295Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:51:58.671Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:53:54.686Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T14:54:09.809Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:00:06.024Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:02:18.467Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:02:31.835Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:04:48.546Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:05:55.415Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:06:39.464Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:06:53.580Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:07:19.194Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:09:46.156Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:12:42.302Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:15:15.134Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:16:19.216Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:16:33.081Z [31merror[39m: Error creating product: Missing required product fields: name, price,  category, stock
+2025-11-22T15:22:36.113Z [31merror[39m: Error retrieving product
+2025-11-22T15:22:36.113Z [31merror[39m: Error deleting product with ID NaN: path.indexOf is not a function
+2025-11-22T15:51:26.214Z [31merror[39m: Error retrieving product
+2025-11-22T15:51:26.214Z [31merror[39m: Error deleting product with ID NaN: path.indexOf is not a function
+2025-11-22T15:52:03.108Z [31merror[39m: Error deleting product with ID: EhQgulC7iEHo3JkwY92b
+2025-11-22T15:52:03.108Z [31merror[39m: Error deleting product with ID EhQgulC7iEHo3JkwY92b: deleteDoc is not defined
+2025-11-22T15:52:57.755Z [31merror[39m: Error deleting product with ID: JLvfU3PZY2MJ5UiobqQN
+2025-11-22T15:52:57.755Z [31merror[39m: Error deleting product with ID JLvfU3PZY2MJ5UiobqQN: deleteDoc is not defined
+2025-11-22T16:01:17.730Z [31merror[39m: Error encountered: NotFoundError is not defined
+2025-11-22T16:01:23.545Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T16:01:23.546Z [31merror[39m: Error encountered: NotFoundError is not defined
+2025-11-22T16:05:23.219Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T16:05:23.221Z [31merror[39m: Error encountered: NotFoundError is not defined
+2025-11-22T16:08:56.744Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T16:08:56.745Z [31merror[39m: Error deleting product with ID AWw1uowgakGCA4COFyJn: Product not found
+2025-11-22T19:53:02.982Z [31merror[39m: Error encountered: Cannot destructure property 'username' of 'req.body' as it is undefined.
+2025-11-22T19:54:06.348Z [31merror[39m: Error encountered: Cannot destructure property 'username' of 'req.body' as it is undefined.
+2025-11-22T19:56:23.104Z [31merror[39m: Error encountered: generateToken is not defined
+2025-11-22T19:57:21.512Z [31merror[39m: Error encountered: generateToken is not defined
+2025-11-22T20:08:34.062Z [31merror[39m: Error encountered: user is not defined
+2025-11-22T20:09:29.407Z [31merror[39m: Error encountered: user is not defined
+2025-11-22T20:16:02.465Z [31merror[39m: Product with ID AWw1uowgakGCA4COFyJn for the deleting proccess was not found
+2025-11-22T20:16:02.466Z [31merror[39m: Error deleting product with ID AWw1uowgakGCA4COFyJn: Product not found
+2025-11-22T20:16:50.889Z [31merror[39m: Error deleting product with ID mqQKwpVUTYXBTIGt1qrW: Cannot set headers after they are sent to the client
+2025-11-22T20:16:50.890Z [31merror[39m: Error encountered: Cannot set headers after they are sent to the client
+2025-11-22T20:21:16.528Z [31merror[39m: Error deleting product with ID PwWcAuW18DIpeHFxOx4k: Cannot set headers after they are sent to the client
+2025-11-22T20:23:15.773Z [31merror[39m: Product with ID PwWcAuW18DIpeHFxOx4k for the deleting proccess was not found
+2025-11-22T20:23:15.775Z [31merror[39m: Error deleting product with ID PwWcAuW18DIpeHFxOx4k: Product not found
+2025-11-22T20:43:24.951Z [31merror[39m: Error in updateProductService for id NaN: Invalid update data
+2025-11-22T20:43:24.953Z [31merror[39m: Error updating stock for product with ID NaN: Invalid update data
+2025-11-22T20:44:22.425Z [31merror[39m: Error in updateProductService for id EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T20:44:22.426Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T20:45:18.314Z [31merror[39m: Error in updateProductService for id EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T20:45:18.316Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T21:02:41.692Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Cannot destructure property 'updateData' of 'undefined' as it is undefined.
+2025-11-22T21:04:56.406Z [31merror[39m: Error in updateProductService for id EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T21:04:56.407Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Invalid update data
+2025-11-22T21:34:44.498Z [31merror[39m: Token verification failed
