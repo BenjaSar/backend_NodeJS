@@ -768,3 +768,27 @@
 2025-11-22T21:06:05.967Z [32minfo[39m: Product updated with ID: EhQgulC7iEHo3JkwY92b
 2025-11-22T21:06:05.970Z [32minfo[39m: Updated stock for product with ID EhQgulC7iEHo3JkwY92b
 2025-11-22T21:34:44.498Z [31merror[39m: Token verification failed
+2025-11-26T22:07:58.281Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-26T22:10:53.000Z [31merror[39m: Token verification failed
+2025-11-26T22:11:27.616Z [32minfo[39m: User test@gmail.com logged in successfully.
+2025-11-26T22:13:28.727Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-26T22:14:23.953Z [31merror[39m: Token verification failed
+2025-11-26T22:14:35.777Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-26T22:14:44.397Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-26T22:14:50.039Z [32minfo[39m: User test@gmail.com logged in successfully.
+2025-11-26T22:15:11.524Z [32minfo[39m: All products fetched
+2025-11-26T22:15:11.526Z [32minfo[39m: Fetched all products
+2025-11-26T22:15:19.089Z [32minfo[39m: Product retrieved
+2025-11-26T22:15:19.093Z [32minfo[39m: Fetched product with ID EhQgulC7iEHo3JkwY92b
+2025-11-26T22:15:50.112Z [32minfo[39m: Product added with ID: 
+2025-11-26T22:15:50.115Z [32minfo[39m: Created new product with ID OksJm8OT7TZe8JXy9gzE
+2025-11-26T22:16:06.044Z [32minfo[39m: Product retrieved
+2025-11-26T22:16:06.384Z [32minfo[39m: Product deleted with ID: OksJm8OT7TZe8JXy9gzE
+2025-11-26T22:16:06.384Z [32minfo[39m: Deleted product with ID OksJm8OT7TZe8JXy9gzE
+2025-11-26T22:16:15.683Z [31merror[39m: Token verification failed
+2025-11-26T22:17:03.727Z [32minfo[39m: Product retrieved
+2025-11-26T22:17:04.194Z [32minfo[39m: Product updated with ID: EhQgulC7iEHo3JkwY92b
+2025-11-26T22:17:04.195Z [32minfo[39m: Updated stock for product with ID EhQgulC7iEHo3JkwY92b
+2025-11-26T22:18:15.275Z [32minfo[39m: Product retrieved
+2025-11-26T22:18:16.192Z [32minfo[39m: Product updated with ID: EhQgulC7iEHo3JkwY92b
+2025-11-26T22:18:16.193Z [32minfo[39m: Updated stock for product with ID EhQgulC7iEHo3JkwY92b

@@ -76,3 +76,6 @@
 2025-11-22T21:04:56.406Z [31merror[39m: Error in updateProductService for id EhQgulC7iEHo3JkwY92b: Invalid update data
 2025-11-22T21:04:56.407Z [31merror[39m: Error updating stock for product with ID EhQgulC7iEHo3JkwY92b: Invalid update data
 2025-11-22T21:34:44.498Z [31merror[39m: Token verification failed
+2025-11-26T22:10:53.000Z [31merror[39m: Token verification failed
+2025-11-26T22:14:23.953Z [31merror[39m: Token verification failed
+2025-11-26T22:16:15.683Z [31merror[39m: Token verification failed
