@@ -792,3 +792,5 @@
 2025-11-26T22:18:15.275Z [32minfo[39m: Product retrieved
 2025-11-26T22:18:16.192Z [32minfo[39m: Product updated with ID: EhQgulC7iEHo3JkwY92b
 2025-11-26T22:18:16.193Z [32minfo[39m: Updated stock for product with ID EhQgulC7iEHo3JkwY92b
+2025-11-26T22:39:30.377Z [32minfo[39m: Server running at http://localhost:3000/
+2025-11-26T22:39:45.432Z [32minfo[39m: User test@gmail.com logged in successfully.
