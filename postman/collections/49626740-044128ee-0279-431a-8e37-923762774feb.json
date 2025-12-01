@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "49626740-044128ee-0279-431a-8e37-923762774feb",
+		"name": "ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllproducts",
+			"id": "49626740-b7392d8c-d498-4fb1-984f-796e30651a96",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNzY0MTk1MjkwLCJleHAiOjE3NjQxOTg4OTB9.uial7IU5d6wEf1gLdN8eOOmR0ENuMs85BvxPnParoCE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/products/",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductsById",
+			"id": "49626740-0750847e-820b-4868-99db-6b833806049f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNzY0MTk1MjkwLCJleHAiOjE3NjQxOTg4OTB9.uial7IU5d6wEf1gLdN8eOOmR0ENuMs85BvxPnParoCE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/products/EhQgulC7iEHo3JkwY92b",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"products",
+						"EhQgulC7iEHo3JkwY92b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductById",
+			"id": "49626740-3dd53b51-2817-4518-a11d-e52a789bf07a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNzYzODQyNDk2LCJleHAiOjE3NjM4NDYwOTZ9.l_RAplIYgf0VjnrBLKqt36u4B3bghHXbqb-q7sIwhOA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/products/mqQKwpVUTYXBTIGt1qrW",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"products",
+						"mqQKwpVUTYXBTIGt1qrW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creadProduct",
+			"id": "49626740-2407ee9b-9dcb-4b70-a06d-8e9c57a14742",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNzY0MTk1MjkwLCJleHAiOjE3NjQxOTg4OTB9.uial7IU5d6wEf1gLdN8eOOmR0ENuMs85BvxPnParoCE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Seleccion Argentina\",\r\n    \"price\": 90000,\r\n    \"category\": \"Camisetas  futbol\",\r\n    \"stock\": 15\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/products/create",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"id": "49626740-19acfeda-c375-42cc-aaaf-b0e96424788d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "2ca775fdef0619f736882abc50f3d6ca780098647211ba4cd4e662b47dacb4cded9367b9cb9c231e5de792b8cc6cc7f15a54b86e9974376f2bea618e657f2c31",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/auth/login",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"id": "49626740-89e4f66e-fd17-4af2-b662-3b8d5e2e2425",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNzY0MTk1MjkwLCJleHAiOjE3NjQxOTg4OTB9.uial7IU5d6wEf1gLdN8eOOmR0ENuMs85BvxPnParoCE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Category\": \"Pantalon\",\r\n    \"Stock\": 1500,\r\n    \"Price \": 200000,\r\n    \"Name\": \"Pantalon Puma\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/products/EhQgulC7iEHo3JkwY92b",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"products",
+						"EhQgulC7iEHo3JkwY92b"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
