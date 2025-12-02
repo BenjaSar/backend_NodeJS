@@ -6,20 +6,20 @@ import winston from 'winston';
 const { createLogger, format, transports } = winston;
 const { combine, colorize, timestamp, printf } = format;
 
-// Define logs directory - use /tmp in production (Vercel serverless)
+// Logs directory - /tmp in production (Vercel serverless)
 const logsDir = process.env.NODE_ENV === 'production' ? '/tmp/logs' : 'logs';
 
-// Ensure the logs directory exists BEFORE creating the logger
+// Check if the logs directory exists BEFORE creating the logger
 try {
   if (!fs.existsSync(logsDir)) {
     fs.mkdirSync(logsDir, { recursive: true });
   }
 } catch (err) {
   console.error('Failed to create logs directory:', err.message);
-  // Continue without file logging if directory creation fails
+
 }
 
-// Define a custom format
+// Custom format
 const myFormat = printf(({ level, message, timestamp }) => {
   return `${timestamp} ${level}: ${message}`;
 });
@@ -27,7 +27,7 @@ const myFormat = printf(({ level, message, timestamp }) => {
 // Create the logger
 const loggerTransports = [new transports.Console()];
 
-// Add file transports only if directory is writable
+//File transports only if directory is writable
 try {
   if (fs.existsSync(logsDir)) {
     loggerTransports.push(
