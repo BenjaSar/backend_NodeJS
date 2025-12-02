@@ -109,7 +109,13 @@ app.use((error, req, res, next) => {
     });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
-  logger.info(`Server running at http://localhost:${PORT}/`);
-});
+// Start server for local development
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}/`);
+    logger.info(`Server running at http://localhost:${PORT}/`);
+  });
+}
+
+// Export app for Vercel serverless functions
+export default app;

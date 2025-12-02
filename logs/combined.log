@@ -794,3 +794,6 @@
 2025-11-26T22:18:16.193Z [32minfo[39m: Updated stock for product with ID EhQgulC7iEHo3JkwY92b
 2025-11-26T22:39:30.377Z [32minfo[39m: Server running at http://localhost:3000/
 2025-11-26T22:39:45.432Z [32minfo[39m: User test@gmail.com logged in successfully.
+2025-12-02T00:02:28.567Z [32minfo[39m: Server running at http://localhost:3000/
+2025-12-02T00:15:59.078Z [32minfo[39m: Server running at http://localhost:3000/
+2025-12-02T00:16:20.917Z [32minfo[39m: User test@gmail.com logged in successfully.

@@ -6,12 +6,17 @@ import winston from 'winston';
 const { createLogger, format, transports } = winston;
 const { combine, colorize, timestamp, printf } = format;
 
-// Define logs directory
-const logsDir = 'logs';
+// Define logs directory - use /tmp in production (Vercel serverless)
+const logsDir = process.env.NODE_ENV === 'production' ? '/tmp/logs' : 'logs';
 
 // Ensure the logs directory exists BEFORE creating the logger
-if (!fs.existsSync(logsDir)) {
-  fs.mkdirSync(logsDir);
+try {
+  if (!fs.existsSync(logsDir)) {
+    fs.mkdirSync(logsDir, { recursive: true });
+  }
+} catch (err) {
+  console.error('Failed to create logs directory:', err.message);
+  // Continue without file logging if directory creation fails
 }
 
 // Define a custom format
@@ -20,6 +25,20 @@ const myFormat = printf(({ level, message, timestamp }) => {
 });
 
 // Create the logger
+const loggerTransports = [new transports.Console()];
+
+// Add file transports only if directory is writable
+try {
+  if (fs.existsSync(logsDir)) {
+    loggerTransports.push(
+      new transports.File({ filename: path.join(logsDir, 'error.log'), level: 'error' }),
+      new transports.File({ filename: path.join(logsDir, 'combined.log') })
+    );
+  }
+} catch (err) {
+  console.error('Failed to initialize file transports:', err.message);
+}
+
 const logger = winston.createLogger({
   level: process.env.LOG_LEVEL || 'info',
   format: combine(
@@ -27,11 +46,7 @@ const logger = winston.createLogger({
     timestamp(),
     myFormat
   ),
-  transports: [
-    new transports.Console(),
-    new transports.File({ filename: path.join(logsDir, 'error.log'), level: 'error' }),
-    new transports.File({ filename: path.join(logsDir, 'combined.log') }),
-  ],
+  transports: loggerTransports,
 });
 
 // Handle uncaught exceptions
