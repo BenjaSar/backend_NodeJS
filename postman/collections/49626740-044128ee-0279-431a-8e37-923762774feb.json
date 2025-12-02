@@ -154,7 +154,7 @@
 					"jwt": [
 						{
 							"key": "secret",
-							"value": "2ca775fdef0619f736882abc50f3d6ca780098647211ba4cd4e662b47dacb4cded9367b9cb9c231e5de792b8cc6cc7f15a54b86e9974376f2bea618e657f2c31",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -206,11 +206,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{localhost}}/auth/login",
+					"raw": "{{vercel}}/api/auth/login",
 					"host": [
-						"{{localhost}}"
+						"{{vercel}}"
 					],
 					"path": [
+						"api",
 						"auth",
 						"login"
 					]
