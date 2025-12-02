@@ -261,9 +261,39 @@
 			"response": []
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "022836b6-acdb-42fd-9e34-21909b616595",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "678475cc-e4cb-46be-9f0c-472ec9699ecf",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "localhost",
+			"value": ""
+		},
+		{
+			"key": "vercel",
 			"value": "",
 			"type": "default"
 		}
